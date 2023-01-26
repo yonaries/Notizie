@@ -28,7 +28,7 @@ function Notes() {
 
   const foldersQuery = fbQuery(
     foldersRef,
-    where("folderId", "==", query.get("f"))
+    where("folderId", "==", folderId ? folderId : "yiuyhk")
   );
   const [values, loading, error, snapshot] = useCollection(foldersQuery);
 
@@ -70,7 +70,7 @@ function Notes() {
         </button>
       </div>
       <div className="notes-list">
-        {loading ? (
+        {loading && error ? (
           <div>
             <p>Loading</p>
           </div>

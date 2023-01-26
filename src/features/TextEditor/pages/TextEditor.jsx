@@ -20,7 +20,8 @@ function TextEditor() {
   const { currentUser } = useAuth();
 
   const [noteId, setNoteId] = useState(query.get("n"));
-  const noteRef = noteId && doc(database, "notes", query.get("n"));
+  const noteRef =
+    noteId && doc(database, "notes", noteId ? query.get("n") : "");
   const [values, loading, error] = useDocumentData(noteRef);
   const [title, setTitle] = useState("");
   const [data, setData] = React.useState({ value: null });
@@ -32,7 +33,7 @@ function TextEditor() {
       setTitle(values.name);
       setData(values.data);
     }
-  }, [values]);
+  }, [values, loading, query]);
 
   async function updateNoteHandler() {
     const note = {
