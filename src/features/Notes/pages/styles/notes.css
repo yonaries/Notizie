@@ -1,0 +1,61 @@
+.notes {
+  height: 100vh;
+  width: 30%;
+  background-color: white;
+  border-right: 1px solid whitesmoke;
+  overflow: auto;
+}
+.bar-button {
+  background-color: inherit;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.notes-list {
+  height: max-content;
+  /* overflow-x: hidden;
+  overflow-y: scroll; */
+}
+.note-tile {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 1rem;
+  transition: 0.2s ease-in-out;
+}
+.note-tile:hover {
+  transform: scale(1.05);
+  z-index: 200;
+}
+
+.language-image {
+  padding: 12px 5px;
+}
+
+.language-image img {
+  transform: scale(0.8);
+}
+
+.doc-title-desc .title {
+  font-weight: 600;
+}
+
+.doc-title-desc .description {
+  color: grey;
+  font-size: 12px;
+  font-weight: 400;
+}
+.search-bar {
+  padding: 1rem;
+  width: 350px;
+}
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: whitesmoke;
+}

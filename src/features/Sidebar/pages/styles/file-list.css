@@ -1,0 +1,49 @@
+.collection-container {
+  border-bottom: var(--bottom-border);
+  background-color: transparent;
+  border-radius: 10px;
+  margin: 0 1rem;
+  margin-bottom: 10px;
+  overflow: auto;
+  height: 80vh;
+  padding-bottom: 1rem;
+}
+
+.collection-container .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  font-weight: 900;
+  font-size: 15px;
+  position: sticky;
+  top: 0;
+  background-color: black;
+  padding-top: 1rem;
+  z-index: 10;
+}
+
+.collection-container .title .title-icon {
+  display: flex;
+  align-items: center;
+  width: 50px;
+}
+
+.collection-container .title .title-icon img {
+  margin-right: 10px;
+}
+
+.collections-list {
+  padding: 0 2rem;
+  overflow: scroll;
+}
+
+.no-file {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60%;
+  font-size: 15px;
+  color: rgb(170, 170, 170);
+  font-weight: 600;
+}

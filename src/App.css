@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400&display=swap");
+
+:root {
+  --bottom-border: 1px solid transparent;
+  --bottom-border-light: 1px solid rgba(235, 235, 235);
+  --selectedColor: rgba(187, 197, 192, 0.7);
+  --light-theme: #fcfcfc;
+  --dark-blue-theme-main: #161d6f;
+  --light-blue-theme-main: #185adb;
+  --light-blue-search-bar: #4a47a3;
+  --dark-blue-search-bar: #0a1931;
+  --slack-theme: #420452;
+  --light-cyan-theme: #afdad3;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  scrollbar-width: none;
+}
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 13px;
+  background-color: #dddddd;
+}
+.App {
+  display: flex;
+  justify-content: start;
+  width: 100vw;
+}

@@ -1,0 +1,22 @@
+.text-editor {
+  background-color: white;
+  width: 50%;
+  height: 100vh;
+  /* padding: 0 1rem; */
+}
+.text-editor .text-note-title,
+.text-note-desc {
+  padding: 1rem;
+}
+.text-editor .text-note-title input {
+  font-size: 30px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+.text-editor .text-note-desc input {
+  font-size: 15px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}

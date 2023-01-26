@@ -1,0 +1,41 @@
+.collection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 5px;
+  margin: 5px 25px;
+  border-radius: 3px;
+  cursor: pointer;
+  overflow-wrap: normal;
+  transition: 0.2s ease-in-out;
+}
+
+.action-buttons {
+  display: flex;
+  align-items: center;
+  height: min-content;
+  width: min-content;
+}
+.action-buttons img:hover {
+  background-color: rgba(255, 255, 255, 0.678);
+  border-radius: 5px;
+}
+
+.colMenuBtn {
+  opacity: 0;
+  width: 20px;
+  height: 17px;
+}
+
+.collection:hover {
+  /* color: black; */
+  background-color: rgba(255, 255, 255, 0.322);
+  border-left: 5px solid white;
+}
+
+.collection .selected:hover {
+  cursor: cell;
+}
+.collection p {
+  font-weight: 600;
+}
